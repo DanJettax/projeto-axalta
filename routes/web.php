@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('ola');
+    return view('welcome');
 });
+
+Route::get('/cores', 'CoresController@listarCores');
 
 
